@@ -4,6 +4,7 @@
 ## Includes
 
 - Vanilla icons
+- Valmod icons
 
 ## How do I get my icons added?
 
