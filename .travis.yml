@@ -7,8 +7,8 @@ before_deploy:
 - git push -q https://$TAGPERM@github.com/CatalysmsServerManager/7dtd-icons --tags
 - ls -R
 script:
-- "chmod +x build.sh"
-- "build.sh A17"
+- "chmod +x ./build.sh"
+- "./build.sh A17"
 deploy:
   provider: releases
   api_key:
