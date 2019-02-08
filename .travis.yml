@@ -14,5 +14,5 @@ deploy:
     secure: 7Tw3MmnHoqTP4Kg3srJzZr2VOkaRZ6Vr+6YWDQzcjH+TNDcUF67gF3mnN6v/EKZU/1VEBVYqaan2ZGbvXoAoFazRoZboD4qNSYhHJmhYa+ZGg+FvL4+ual0Ca+8uECfcC4bWypfOTLfu7mLZzP3CSjRD9n2539EdxulFSeQdaVMtdXH6r6INGuaQQSNRMP9POCtN2hCm6kwNu+vE7TemQBUUFObH7iKCvQ7rUXdEqQkZ1dnQUkNhy6jOeE9A0NJsQ73T/R9k8izC7ZBCDGYzO34r/bQlQaSoazUlXXR36EoFp4JVYNQcgRCJTWwKYuyP6dRIJphIlMWdEOJmhXGbud3UJas75O+gQdTKcLR7WslLV/b+s52LrZViICwX9w1XS1UaRDImV0jC83/mkgtpPmmKCr3xkzoSFRvSwf02QW4A6w1uwdAoUvi3yXiOK55GpqYasWwHpHbJdMmf6uaTnccVRa2oiGYhELYS/tCqOxoSk7ZNdR/rlz5eTqY/0f6LbfIMVxdNcrzSRDFCD2Cd8z2SVxc0C+d66fAYO4GynV0rYjzsHjX6p62QBO7b8g6+PkgElKU9lZzsFDKtiwOZzom9qUphGIWBibpnCZE6YKjefcj/LxxZIOPfDUR5aP+Uz4U0FEaKoIrNXLbEWol8DYKR+kkUXeTbezJLrlPwJuo=
   file: dist/sdtdIcons - A17.tar.gz
   on:
-    tags: true
+    tags: false
     branch: master
