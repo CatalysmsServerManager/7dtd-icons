@@ -2,11 +2,11 @@ language: minimal
 before_deploy:
 - git config --global user.email "builds@travis-ci.com"
 - git config --global user.name "Travis CI"
-- export GIT_TAG=$TRAVIS_BRANCH-0.1.$TRAVIS_BUILD_NUMBER
+- export GIT_TAG=${TRAVIS_TAG:-$(date +'%Y%m%d%H%M%S')-$(git log --format=%h -1)-$TRAVIS_COMMIT_MESSAGE}
 - git tag $GIT_TAG -a -m "Generated tag from TravisCI for build $TRAVIS_BUILD_NUMBER"
-- git push -q https://$TAGPERM@github.com/CatalysmsServerManager/7dtd-icons --tags
 - ls -R
 script:
+- "chmod +x ./build.sh"
 - "./build.sh A17"
 deploy:
   provider: releases
@@ -15,7 +15,4 @@ deploy:
   file: dist/sdtdIcons - A17.tar.gz
   on:
     tags: false
-    all_branches: true
-branches:
-  except:
-    - /^*-v[0-9]/
+    branch: master
