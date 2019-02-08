@@ -21,6 +21,6 @@ branches:
   except:
     - /^*-v[0-9]/
 after_deploy:
-  - wget https://raw.githubusercontent.com/DiscordHooks/travis-ci-discord-webhook/master/send.sh
+  - wget https://raw.githubusercontent.com/DiscordHooks/travis-ci-discord-webhook/fc36c25fc2b3e6d93a01e34a0502b894077b04f0/send.sh
   - chmod +x send.sh
   - ./send.sh success $WEBHOOK_URL
