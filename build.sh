@@ -1,9 +1,10 @@
 #!/bin/bash
 
-NAME="sdtdIcons_$1"
+NAME="sdtdIcons"
 
 mkdir -p tmp/ "dist/$NAME"
 cp sdtdIcons/"$1"*/* tmp/
 cp tmp/* dist/"$NAME"/
-tar -czf dist/"$NAME".tar.gz tmp/
 rm -rf tmp/
+cd dist/
+tar -czf "$NAME".tar.gz "$NAME"/*
